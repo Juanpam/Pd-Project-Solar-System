@@ -47,7 +47,7 @@
 #X msg 277 25 1;
 #X msg 213 10 0;
 #X obj 365 8 loadbang;
-#X obj 346 106 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 346 106 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 315 161 0;
 #X floatatom 378 263 5 0 0 0 - - -;
@@ -167,7 +167,7 @@
 #X restore 472 218 pd ellipse;
 #X floatatom 369 159 5 0 0 0 - - -;
 #X obj 395 123 f;
-#X obj 343 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 343 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 322 113 0;
 #X obj 443 123 + 0.01;
@@ -361,7 +361,7 @@
 #X restore 472 218 pd ellipse;
 #X floatatom 369 159 5 0 0 0 - - -;
 #X obj 395 123 f;
-#X obj 343 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 343 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 322 113 0;
 #X obj 443 123 + 0.01;
@@ -530,7 +530,7 @@
 #X restore 472 218 pd ellipse;
 #X floatatom 369 159 5 0 0 0 - - -;
 #X obj 395 123 f;
-#X obj 343 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 343 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 322 113 0;
 #X obj 443 123 + 0.01;
@@ -699,7 +699,7 @@
 #X restore 472 218 pd ellipse;
 #X floatatom 369 159 5 0 0 0 - - -;
 #X obj 395 123 f;
-#X obj 343 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 343 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 322 113 0;
 #X obj 443 123 + 0.01;
@@ -892,7 +892,7 @@
 #X restore 472 218 pd ellipse;
 #X floatatom 369 159 5 0 0 0 - - -;
 #X obj 395 123 f;
-#X obj 343 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 343 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 322 113 0;
 #X obj 443 123 + 0.01;
@@ -1069,7 +1069,7 @@
 #X restore 472 218 pd ellipse;
 #X floatatom 369 159 5 0 0 0 - - -;
 #X obj 395 123 f;
-#X obj 343 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 343 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 322 113 0;
 #X obj 443 123 + 0.01;
@@ -1248,7 +1248,7 @@
 #X restore 472 218 pd ellipse;
 #X floatatom 369 159 5 0 0 0 - - -;
 #X obj 395 123 f;
-#X obj 343 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 343 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 322 113 0;
 #X obj 443 123 + 0.01;
@@ -1478,7 +1478,7 @@
 #X restore 472 218 pd ellipse;
 #X floatatom 369 159 5 0 0 0 - - -;
 #X obj 395 123 f;
-#X obj 343 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 343 67 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 322 113 0;
 #X obj 443 123 + 0.01;
@@ -1649,6 +1649,13 @@
 #X obj -6 -27 loadbang;
 #X msg 198 -46 50;
 #X msg 24 248 0 0 -12;
+#X obj 927 5 pix_image planets/stars.jpg;
+#X obj 710 -42 gemhead;
+#X obj 925 35 pix_texture;
+#X obj 751 19 translateXYZ;
+#X obj 892 -32 loadbang;
+#X msg 828 -26 -35;
+#X obj 852 61 rectangle 80 45;
 #X connect 1 0 0 0;
 #X connect 2 0 0 0;
 #X connect 3 0 11 0;
@@ -1801,3 +1808,9 @@
 #X connect 141 0 2 0;
 #X connect 142 0 132 0;
 #X connect 143 0 15 0;
+#X connect 144 0 146 0;
+#X connect 145 0 147 0;
+#X connect 146 0 150 0;
+#X connect 147 0 144 0;
+#X connect 148 0 149 0;
+#X connect 149 0 147 3;
