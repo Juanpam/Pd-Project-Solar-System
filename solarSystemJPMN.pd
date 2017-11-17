@@ -1670,6 +1670,7 @@
 #X connect 8 0 56 0;
 #X connect 8 0 62 0;
 #X connect 8 0 121 0;
+#X connect 8 0 145 0;
 #X connect 9 0 88 0;
 #X connect 10 0 91 0;
 #X connect 11 0 94 0;
